@@ -30,6 +30,12 @@ def yukkuri_api(word):
     return jsonify(wav=url_for('static', filename=wav_file),
                     word=word.encode('utf-8'))
 
+@app.route("/syaberu/<word>")
+def shaberu_api(word):
+    wav_file = yukkuri_wav(word)
+    os.system("aplay ./static/" + wav_file)
+    return jsonify(statis="ok")
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
