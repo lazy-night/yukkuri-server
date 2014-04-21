@@ -1,7 +1,7 @@
-ゆっくりサーバ
+yukkuri server
 ==============
 
-Linuxでは動きます。(多分Macでも大丈夫)
+Raspberry Piのみで動きます。
 
 .. code-block:: python
 
@@ -17,10 +17,10 @@ http://127.0.0.1:5000/yukkuri/<word>
 
 http://127.0.0.1:5000/yukkuri/api/<word>
 
-そのページでゆっくりボイスを聞くか、jsonデータを得ることができます。
+http://127.0.0.1:5000/syaberu/<word>
+
+そのページでゆっくりボイスを聞くか、jsonデータを得るか、Raspberry Piをしゃべれせることができます。
 
 ゆっくりボイスはこちらにあるものを使用しています。
 
 `AquesTalk Pi - Raspberry Pi用の音声合成 <http://www.a-quest.com/products/aquestalkpi.html>`_
-
-実際に使用する場合は上記リンクからダウンロードして使用して下さい。
